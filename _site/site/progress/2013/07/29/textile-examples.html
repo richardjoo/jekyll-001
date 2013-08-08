@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Textile Examples</title>
+    <link rel="shortcut icon" href="http://192.168.1.11:4002/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="http://192.168.1.11:4002/images/iphone_bookmark.png" />
+    <link rel="stylesheet" href="http://192.168.1.11:4002/stylesheets/styles.css">
+    <link rel="stylesheet" href="http://192.168.1.11:4002/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="http://192.168.1.11:4002/javascripts/main.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <script>
+      $(function() {
+        $( "#accordion" ).accordion({
+          collapsible: true,
+          active: false
+        });
+      });
+
+      $(function() {
+        $( "#tabs" ).tabs();
+      });
+    </script>
+  </head>
+  <body>
+
+      <header>
+        <h1 class="title"><a href="http://192.168.1.11:4002">jekyll-001 Dev</a></h1>
+        <p>jekyll out-of-box ready site</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="http://192.168.1.11:4002" class="button fork"><strong>Home</strong></a>
+        <div class="downloads">
+          <span>Menu:</span>
+          <ul>
+            <li><a href="http://192.168.1.11:4002/markdown.html" class="button">Markdown</a></li>
+            <li><a href="http://192.168.1.11:4002/jquery.html" class="button">jquery</a></li>
+            <li><a href="http://192.168.1.11:4002/posts.html" class="button">Blog</a></li>
+            <li><a href="http://192.168.1.11:4002/resources.html" class="button">Resources</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li>07 August 2013</li>
+        </ul>
+      </nav>
+
+      <section>
+        <h2>Textile Examples</h2>
+<p class="meta">29 Jul 2013</p>
+
+<div class="post">
+<p>This is strictly markdown examples.
+I have <a href="http://www.google.com">textile</a> and <a href="http://www.google.com">Pygments with Liquid tags</a> examples on the other pages.</p>
+
+<h1>This is H1</h1>
+
+<h2>This is H2</h2>
+
+<h3>This is H3</h3>
+
+<h4>This is H4</h4>
+
+<h5>This is H5</h5>
+
+<h6>This is H6</h6>
+
+<ul>
+<li>this is bullet</li>
+<li>this is another bullet</li>
+</ul>
+
+
+<p>Multiple levels</p>
+
+<ul>
+<li>this is main
+
+<ul>
+<li>this is sub level
+
+<ul>
+<li>this is third level</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>This is number bullets</p>
+
+<ol>
+<li>numbered</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ol>
+
+
+<p>This is numbered bullets with sub items</p>
+
+<ol>
+<li>numbered
+
+<ol>
+<li>sub 1</li>
+<li>sub 2</li>
+</ol>
+</li>
+<li>two
+
+<ol>
+<li>sub 1</li>
+<li>sub 2</li>
+</ol>
+</li>
+<li>three
+
+<ul>
+<li>combo</li>
+<li>comb 2</li>
+</ul>
+</li>
+<li>four</li>
+</ol>
+
+
+<p><strong>This is bold</strong>
+<em>This is italic</em></p>
+
+<p><a href="http://www.google.com">this is regular link</a></p>
+
+<p><a href="http://www.google.com">this is referenced link</a>
+the reference links can be found at the bottom of the code.</p>
+
+<p>this is inline <code>code block</code> which I think really cool with this theme.</p>
+
+<p>this will give me formatted ruby code</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+
+
+<p>this is the code with line numbers</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">show</span>
+<span class="lineno">2</span>   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
+<span class="lineno">3</span>   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+<span class="lineno">4</span>     <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
+<span class="lineno">5</span>     <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
+<span class="lineno">6</span>   <span class="k">end</span>
+<span class="lineno">7</span> <span class="k">end</span>
+</code></pre></div>
+
+
+
+
+</div>
+
+      </section>
+
+
+      <footer>
+        <ul>
+          <li><a href="http://192.168.1.11:4002" class="button fork"><strong>Home</strong></a></li>
+          <li><a href="http://192.168.1.11:4002/organic.html" class="button">Organic</a></li>
+          <li><a href="http://192.168.1.11:4002/nongmo.html" class="button">Non-GMO</a></li>
+          <li><a href="http://192.168.1.11:4002/chemicalfree.html" class="button">Chemical Free</a></li>
+          <li><a href="http://192.168.1.11:4002/posts.html" class="button">Blog</a></li>
+          <li><a href="http://192.168.1.11:4002/resources.html" class="button">Resources</a></li>
+        </ul>
+
+        <br />
+
+        <p>Project maintained by <a href="https://github.com/richardjoo">richardjoo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>

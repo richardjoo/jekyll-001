@@ -1,0 +1,12 @@
+# to run from the dev, please run jekyll like this:
+# jekyll serve --watch --config _config.yml,_config-dev.yml
+name: jekyll-001 Dev
+description: "jekyll out-of-box ready site"
+pygments: true
+paginate: 5
+paginate_path: "page:num"
+safe: true
+lsi: false
+markdown: rdiscount
+# url: http://0.0.0.0:4000
+url: http://192.168.1.11:4002
