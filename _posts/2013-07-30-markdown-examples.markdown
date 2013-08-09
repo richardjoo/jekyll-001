@@ -138,7 +138,20 @@ this is an animated gif
 ![this is an animated gif]({{ site.url }}/images/9DSZf.jpeg)
 
 
+this works too
 
+![Alt text][image_1]
+
+[image_1]: {{ site.url }}/images/9DSZf.jpeg  "Optional title attribute"
+
+
+### Horizontals
+
+* * *
+***
+*****
+- - -
+---------------------------------------
 
 
 
