@@ -5,9 +5,10 @@ date:   2013-08-03 10:33 PM
 categories: chemicalfree
 ---
 
+This blog shows you how to utilize inline code block to emphasize your point. And also utlizies header to display nav menu to the left.
+
 I got this content from [Natural Health Way][1]
 
-[1]: http://www.naturalhealthway.com/articles/chemicals/chemicals.html
 
 These are facts about 10 of the most unwanted ingredients that may be in your personal care and beauty aid products!
 
@@ -85,3 +86,6 @@ These are facts about 10 of the most unwanted ingredients that may be in your pe
 * It can also aggravate `coughs` and `colds` and trigger `asthma`.
 * Serious side effects include `weakening of the immune system` and `cancer`.
 * Nearly all brands of skin, body and hair care, antiperspirants and nail polish found in stores contain formaldehyde-releasing ingredients.
+
+
+[1]: http://www.naturalhealthway.com/articles/chemicals/chemicals.html

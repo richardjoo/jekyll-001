@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Markdown Examples</title>
+    <link rel="shortcut icon" href="http://192.168.1.11:4002/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="http://192.168.1.11:4002/images/iphone_bookmark.png" />
+    <link rel="stylesheet" href="http://192.168.1.11:4002/stylesheets/styles.css">
+    <link rel="stylesheet" href="http://192.168.1.11:4002/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="http://192.168.1.11:4002/javascripts/main.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <script>
+      $(function() {
+        $( "#accordion" ).accordion({
+          collapsible: true,
+          active: false
+        });
+      });
+
+      $(function() {
+        $( "#tabs" ).tabs();
+      });
+    </script>
+  </head>
+  <body>
+
+      <header>
+        <h1 class="title"><a href="http://192.168.1.11:4002">jekyll-001 Dev</a></h1>
+        <p>jekyll out-of-box ready site</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="http://192.168.1.11:4002" class="button fork"><strong>Home</strong></a>
+        <div class="downloads">
+          <span>Menu:</span>
+          <ul>
+            <li><a href="http://192.168.1.11:4002/markdown.html" class="button">Markdown</a></li>
+            <li><a href="http://192.168.1.11:4002/jquery.html" class="button">jquery</a></li>
+            <li><a href="http://192.168.1.11:4002/posts.html" class="button">Blog</a></li>
+            <li><a href="http://192.168.1.11:4002/resources.html" class="button">Resources</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li>08 August 2013</li>
+        </ul>
+      </nav>
+
+      <section>
+        <h2>Markdown Examples</h2>
+<p class="meta">29 Jul 2013</p>
+
+<div class="post">
+<p>This is strictly markdown examples.
+I got many contents from <a href="http://en.wikipedia.org/wiki/Markdown">wiki</a>.</p>
+
+<p>I have <a href="http://www.google.com">textile</a> and <a href="http://www.google.com">Pygments with Liquid tags</a> examples on the other pages.</p>
+
+<h1>This is H1</h1>
+
+<h2>This is H2</h2>
+
+<h3>This is H3</h3>
+
+<h4>This is H4</h4>
+
+<h5>This is H5</h5>
+
+<h6>This is H6</h6>
+
+<h1>This is different way to show first-level heading</h1>
+
+<h2>This is different way to show second-level heading</h2>
+
+<p>To insert a linebreak,<br/>
+end a line with two or more spaces followed by a return.</p>
+
+<p>For example (using visible space notation):<br/>
+here is line one then press space bar twice and hit return.</p>
+
+<p>this is first line, and to line break  hit enter<br/>
+and type something else.</p>
+
+<ul>
+<li>this is bullet</li>
+<li>this is another bullet</li>
+</ul>
+
+
+<p>Multiple levels</p>
+
+<ul>
+<li>this is main
+
+<ul>
+<li>this is sub level
+
+<ul>
+<li>this is third level</li>
+<li>You can use + or - too</li>
+<li>this is another sub level</li>
+<li>this is sub level too!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>This is number bullets</p>
+
+<ol>
+<li>numbered</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ol>
+
+
+<p>This is numbered bullets with sub items</p>
+
+<ol>
+<li>numbered
+
+<ol>
+<li>sub 1</li>
+<li>sub 2</li>
+</ol>
+</li>
+<li>two
+
+<ol>
+<li>sub 1</li>
+<li>sub 2</li>
+</ol>
+</li>
+<li>three
+
+<ul>
+<li>combo</li>
+<li>comb 2</li>
+</ul>
+</li>
+<li>four</li>
+</ol>
+
+
+<p>If blank lines are placed between items, they will be parsed as paragraphs. Multi-paragraph list items can be created by indenting the paragraphs by 4 spaces or 1 tab.</p>
+
+<ul>
+<li><p>Item 1</p>
+
+<p>  I got the one line down and 4 spaces to create multiple paragraphs here.  As you can see, this will shows up as paragraph</p>
+
+<p>  And this one as another paragraph too!</p></li>
+<li><p>Item 2</p></li>
+<li>Item 3</li>
+</ul>
+
+
+<p><em>emphasis (italic)</em> or <em>emphasis (italic)</em></p>
+
+<p><strong>strong emphasis (boldface)</strong> or <strong>strong emphasis (boldface)</strong></p>
+
+<p><strong><em>very strong emphasis (italic and boldface)</em></strong> or <strong><em>very strong emphasis (italic and boldface)</em></strong></p>
+
+<p><strong>This is bold</strong>
+<em>This is italic</em></p>
+
+<p><a href="http://www.google.com">this is regular link</a></p>
+
+<p><a href="http://www.google.com">this is referenced link</a>
+the reference links can be found at the bottom of the code.</p>
+
+<p>this is inline <code>code block</code> which I think really cool with this theme.</p>
+
+<p>Multiline code or longer pieces of code should be indented by four spaces.</p>
+
+<pre><code>code line 1
+code line 2
+code line 3
+</code></pre>
+
+<p>Blockquotes are created by adding an angle bracket. For example:</p>
+
+<blockquote><p>"This entire paragraph of text will be enclosed in an HTML blockquote element.
+Blockquote elements are reflowable. You may arbitrarily
+wrap the text to your liking, and it will all be parsed
+into a single blockquote element."</p></blockquote>
+
+<h3>Links:</h3>
+
+<p>You have few options to do links<br/>
+<a href="http://www.google.com">this is a link</a><br/>
+<a href="http://www.google.com">this is a link too</a></p>
+
+<h3>Image</h3>
+
+<p>this is an animated gif<br/>
+<code>
+  ![this is an animated gif](http://192.168.1.11:4002/images/9DSZf.jpeg)
+</code></p>
+
+<p><img src="http://192.168.1.11:4002/images/9DSZf.jpeg" alt="this is an animated gif" /></p>
+
+</div>
+
+      </section>
+
+
+      <footer>
+        <ul>
+          <li><a href="http://192.168.1.11:4002" class="button fork"><strong>Home</strong></a></li>
+          <li><a href="http://192.168.1.11:4002/organic.html" class="button">Organic</a></li>
+          <li><a href="http://192.168.1.11:4002/nongmo.html" class="button">Non-GMO</a></li>
+          <li><a href="http://192.168.1.11:4002/chemicalfree.html" class="button">Chemical Free</a></li>
+          <li><a href="http://192.168.1.11:4002/posts.html" class="button">Blog</a></li>
+          <li><a href="http://192.168.1.11:4002/resources.html" class="button">Resources</a></li>
+        </ul>
+
+        <br />
+
+        <p>Project maintained by <a href="https://github.com/richardjoo">richardjoo</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
